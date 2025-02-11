@@ -256,14 +256,14 @@ const MultiBoxOrder = () => {
               {/* Stepper & Form Layout */}
               <Grid container spacing={1} sx={{ marginTop: 2 }}>
                 {/* Left Side - Stepper */}
-                <Grid item xs={12} md={3} sx={{ padding: 2 }}>
+                <Grid size={{ md:3, xs: 12 }} sx={{ padding: 2 }}>
                   <Paper elevation={1} sx={{ padding: 2, height: "100%" }}>
                     <OrderStepper activeStep={activeStep} />
                   </Paper>
                 </Grid>
 
                 {/* Right Side - Form Content */}
-                <Grid item xs={12} md={9} sx={{ padding: 2, width: "calc(100% - 23%)" }}>
+                <Grid size={{ md: 9, xs: 12 }} sx={{ padding: 2 }}>
                   <Paper elevation={1} sx={{ padding: 3 }}>
                     <Box>
                       {/* Step 1: Buyer Details */}
@@ -286,7 +286,7 @@ const MultiBoxOrder = () => {
                             Address Details
                           </Typography>
 
-                          <Grid container spacing={2} sx={{ marginTop: 2 }}></Grid>
+                         
 
                           <Grid size={{ md: 12 }} marginTop={2}>
                             <Field

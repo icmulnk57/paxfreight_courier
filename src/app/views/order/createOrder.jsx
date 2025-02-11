@@ -193,14 +193,14 @@ console.log(validationSchemas[activeStep]);
             {/* Stepper & Form Layout */}
             <Grid container spacing={1} sx={{ marginTop: 2 }}>
               {/* Left Side - Stepper */}
-              <Grid item xs={12} md={3} sx={{ padding: 2 }}>
+              <Grid size={{ md: 3, xs: 12 }} sx={{ padding: 2 }}>
                 <Paper elevation={1} sx={{ padding: 2, height: "100%" }}>
                   <OrderStepper activeStep={activeStep} />
                 </Paper>
               </Grid>
 
               {/* Right Side - Form Content */}
-              <Grid item xs={12} md={9} sx={{ padding: 2, width: "calc(100% - 23%)" }}>
+              <Grid size={{ md: 9, xs: 12 }} sx={{ padding: 2 }}>
                 <Paper elevation={1} sx={{ padding: 3 }}>
                   <Box>
                     {/* Step 1: Buyer Details */}
@@ -223,15 +223,7 @@ console.log(validationSchemas[activeStep]);
                           Address Details
                         </Typography>
 
-                        
-
-                        <Grid container spacing={2} sx={{ marginTop: 2 }}>
-                          
-                          
-                         
-                        </Grid>
-
-                        <Grid size={{ md: 12 }} marginTop={2}>
+                        <Grid size={{ md:12, xs: 12 }} marginTop={2}>
                           <Field
                             as={TextField}
                             fullWidth
@@ -393,7 +385,7 @@ console.log(validationSchemas[activeStep]);
 
                         <Grid container spacing={2} mt={2}>
                           {/* CSB IV Option */}
-                          <Grid item xs={12} md={6}>
+                          <Grid size={{ md: 6, xs: 12 }}>
                             <Card
                               variant="outlined"
                               style={{
@@ -408,7 +400,7 @@ console.log(validationSchemas[activeStep]);
                             >
                               <CardContent>
                                 <Grid container alignItems="center" spacing={2}>
-                                  <Grid item>
+                                  <Grid size>
                                     <PersonIcon
                                       fontSize="large"
                                       color={selectedType === "CSB IV" ? "primary" : "inherit"}
@@ -435,7 +427,7 @@ console.log(validationSchemas[activeStep]);
                           </Grid>
 
                           {/* CSB V Option */}
-                          <Grid item xs={12} md={6}>
+                          <Grid size={{ md: 6, xs: 12 }}>
                             <Card
                               variant="outlined"
                               style={{

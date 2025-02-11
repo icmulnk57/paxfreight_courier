@@ -112,7 +112,7 @@ const Draft = () => {
         activeTab={activeTab}
         onTabChange={handleTabChange}
       />
-      <div style={{ padding: "20px" }}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems:"center", padding: "20px" }}>
         {isLoading ? (
           <CircularProgress />
         ) : (
