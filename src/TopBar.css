@@ -1,0 +1,16 @@
+/* TopBar.css */
+.tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Position the underline at the bottom */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Height of the underline */
+  background-color: #46b971; /* Green underline color */
+  opacity: 0; /* Initially not visible */
+  transition: opacity 0.3s ease; /* Smooth transition for underline appearance */
+}
+
+.tab.active::after {
+  opacity: 1; /* Visible when the tab is active */
+}
