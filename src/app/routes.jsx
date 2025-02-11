@@ -26,6 +26,7 @@ import MultiBoxOrder from "./views/multiOrder/MultiBoxOrder";
 
 
 
+
 // E-CHART PAGE
 const AppEchart = Loadable(lazy(() => import("app/views/charts/echarts/AppEchart")));
 // DASHBOARD PAGE
