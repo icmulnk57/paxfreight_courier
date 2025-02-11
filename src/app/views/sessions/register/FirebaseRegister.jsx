@@ -17,7 +17,7 @@ import useTheme from "@mui/material/styles/useTheme";
 import MatxDivider from "app/components/MatxDivider";
 import { Paragraph } from "app/components/Typography";
 // GLOBAL CUSTOM HOOKS
-import useAuth from "app/hooks/useAuth";
+// import useAuth from "app/hooks/useAuth";
 
 // STYLED COMPONENTS
 const ContentBox = styled("div")(({ theme }) => ({
