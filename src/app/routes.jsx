@@ -20,7 +20,10 @@ import ProfilePage from "./views/accounts/ProfilePage";
 import KYCForm from "./views/accounts/kycform";
 import KYCModal from "./components/KYCModal";
 import RequestHeavyWeight from "./views/heavyWeight/RequestHeavyWeight";
-import MultiBoxOrder from "./views/multiOrder/multiBoxOrder";
+import MultiBoxOrder from "./views/multiOrder/MultiBoxOrder";
+
+
+
 
 
 // E-CHART PAGE
